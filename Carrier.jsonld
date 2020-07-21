@@ -8,52 +8,52 @@
       },
       "name": 
       {
-         "@id": "https://schema.org/name",
+         "@id": "http://schema.org/name",
          "@type": "@id"
       },
       "taxId": 
       {
-         "@id": "https://schema.org/vatID",
+         "@id": "http://schema.org/vatID",
          "@type": "@id"
       },
       "address": 
       {
-         "@id": "https://schema.org/address",
+         "@id": "http://schema.org/address",
          "@type": "@id"
       },
       "street": 
       {
-         "@id": "https://schema.org/streetAddress",
+         "@id": "http://schema.org/streetAddress",
          "@type": "@id"
       },
       "city": 
       {
-         "@id": "https://schema.org/addressLocality",
+         "@id": "http://schema.org/addressLocality",
          "@type": "@id"
       },
       "state": 
       {
-         "@id": "https://schema.org/addressRegion",
+         "@id": "http://schema.org/addressRegion",
          "@type": "@id"
       },
       "country": 
       {
-         "@id": "https://schema.org/addressCountry",
+         "@id": "http://schema.org/addressCountry",
          "@type": "@id"
       },
       "postcode":
       {
-         "@id": "https://schema.org/postalCode",
+         "@id": "http://schema.org/postalCode",
          "@type": "@id"
       },
       "contactDetails": 
       {
-         "@id": "https://schema.org/ContactPoint",
+         "@id": "http://schema.org/ContactPoint",
          "@type": "@id"
       },
       "email": 
       {
-         "@id": "https://schema.org/email",
+         "@id": "http://schema.org/email",
          "@type": "@id"
       }
    }
