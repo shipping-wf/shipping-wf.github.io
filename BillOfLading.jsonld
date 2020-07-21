@@ -9,7 +9,7 @@
       },
       "serviceMode": 
       {
-         "@id": "http://schema.org/",
+         "@id": "http://schema.org/serviceType",
          "@type": "@id"
       },
       "transportEquipmentQuantity": 
