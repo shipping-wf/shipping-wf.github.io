@@ -1,86 +1,60 @@
 {
    "@context":
    {
-      "Person": "http://xmlns.com/foaf/0.1/Person",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "name": "http://xmlns.com/foaf/0.1/name",
-      "nickname": "http://xmlns.com/foaf/0.1/nick",
-      "affiliation": "http://schema.org/affiliation",
-      "depiction":
+      "carrierCode": 
       {
-         "@id": "http://xmlns.com/foaf/0.1/depiction",
+         "@id": "http://schema.org/identifier",
          "@type": "@id"
       },
-      "image":
+      "name": 
       {
-         "@id": "http://xmlns.com/foaf/0.1/img",
+         "@id": "https://schema.org/name",
          "@type": "@id"
       },
-      "born":
+      "taxId": 
       {
-         "@id": "http://schema.org/birthDate",
-         "@type": "xsd:date"
-      },
-      "child":
-      {
-         "@id": "http://schema.org/children",
+         "@id": "https://schema.org/vatID",
          "@type": "@id"
       },
-      "colleague":
+      "address": 
       {
-         "@id": "http://schema.org/colleagues",
+         "@id": "https://schema.org/address",
          "@type": "@id"
       },
-      "knows":
+      "street": 
       {
-         "@id": "http://xmlns.com/foaf/0.1/knows",
+         "@id": "https://schema.org/streetAddress",
          "@type": "@id"
       },
-      "died":
+      "city": 
       {
-         "@id": "http://schema.org/deathDate",
-         "@type": "xsd:date"
-      },
-      "email":
-      {
-         "@id": "http://xmlns.com/foaf/0.1/mbox",
+         "@id": "https://schema.org/addressLocality",
          "@type": "@id"
       },
-      "familyName": "http://xmlns.com/foaf/0.1/familyName",
-      "givenName": "http://xmlns.com/foaf/0.1/givenName",
-      "gender": "http://schema.org/gender",
-      "homepage":
+      "state": 
       {
-         "@id": "http://xmlns.com/foaf/0.1/homepage",
+         "@id": "https://schema.org/addressRegion",
          "@type": "@id"
       },
-      "honorificPrefix": "http://schema.org/honorificPrefix",
-      "honorificSuffix": "http://schema.org/honorificSuffix",
-      "jobTitle": "http://xmlns.com/foaf/0.1/title",
-      "nationality": "http://schema.org/nationality",
-      "parent":
+      "country": 
       {
-         "@id": "http://schema.org/parent",
+         "@id": "https://schema.org/addressCountry",
          "@type": "@id"
       },
-      "sibling":
+      "postcode":
       {
-         "@id": "http://schema.org/sibling",
+         "@id": "https://schema.org/postalCode",
          "@type": "@id"
       },
-      "spouse":
+      "contactDetails": 
       {
-         "@id": "http://schema.org/spouse",
+         "@id": "https://schema.org/ContactPoint",
          "@type": "@id"
       },
-      "telephone": "http://schema.org/telephone",
-      "Address": "http://www.w3.org/2006/vcard/ns#Address",
-      "address": "http://www.w3.org/2006/vcard/ns#address",
-      "street": "http://www.w3.org/2006/vcard/ns#street-address",
-      "locality": "http://www.w3.org/2006/vcard/ns#locality",
-      "region": "http://www.w3.org/2006/vcard/ns#region",
-      "country": "http://www.w3.org/2006/vcard/ns#country",
-      "postalCode": "http://www.w3.org/2006/vcard/ns#postal-code"
+      "email": 
+      {
+         "@id": "https://schema.org/email",
+         "@type": "@id"
+      }
    }
 }
-
