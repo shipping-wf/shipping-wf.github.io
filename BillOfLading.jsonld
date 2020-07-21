@@ -3,10 +3,31 @@
    {
       "BillOfLading":
       {
-         "@id": "http://schema.org/Order",
+         "@id": "https://schema.org/Order",
          "@type": "@id"
 
       },
+      "carrier":
+      {
+         "@id": "https://shipping-wf.github.io/Carrier.jsonld",
+         "@type": "@id"
+      },
+      "consignor":
+      {
+         "@id": "https://shipping-wf.github.io/Consignor.jsonld",
+         "@type": "@id" 
+      },
+      "consignee":
+      {
+         "@id": "https://shipping-wf.github.io/Consignee.jsonld",
+         "@type": "@id"
+      },
+      "consignmentItems":[
+         {
+            "@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
+            "@type": "@id"
+         }
+      ],
       "serviceMode": 
       {
          "@id": "http://schema.org/serviceType",
@@ -17,6 +38,17 @@
          "@id": "http://schema.org/Quantity",
          "@type": "@id"
       },
+      "charges":
+      {
+         "@id": "https://shipping-wf.github.io/Charge.jsonld",
+         "@type": "@id"
+      },
+      "notifyParties":[
+         {
+            "@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
+            "@type": "id"
+         }
+      ],
       "shippedOnBoardDate":
       {
          "@id": "http://schema.org/DateTime",
