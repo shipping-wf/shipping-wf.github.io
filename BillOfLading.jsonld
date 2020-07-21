@@ -42,7 +42,7 @@
       "notifyParties": {
             "@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
             "@type": "@id"
-      }
+      },
       "shippedOnBoardDate":
       {
          "@id": "https://schema.org/DateTime",
