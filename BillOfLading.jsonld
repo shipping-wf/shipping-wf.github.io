@@ -34,12 +34,12 @@
       },
       "negotiable":
       {
-         "@id": "https://shipping-wf.github.io/isNegotiable.md",
+         "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isNegotiable.md",
          "@type": "http://schema.org/Boolean"
       },
       "eBL":
       {
-         "@id": "https://shipping-wf.github.io/isElectronic.md",
+         "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isElectronic.md",
          "@type": "http://schema.org/Boolean"
       }
    }
