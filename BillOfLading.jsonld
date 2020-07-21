@@ -21,12 +21,10 @@
          "@id": "https://shipping-wf.github.io/Consignee.jsonld",
          "@type": "@id"
       },
-      "consignmentItems":[
-         {
+      "consignmentItems": {
             "@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
             "@type": "@id"
-         }
-      ],
+      },
       "serviceMode": 
       {
          "@id": "https://schema.org/serviceType",
@@ -37,18 +35,14 @@
          "@id": "https://schema.org/Quantity",
          "@type": "@id"
       },
-      "charges":[
-         {
+      "charges": {
             "@id": "https://shipping-wf.github.io/Charge.jsonld",
             "@type": "@id"
-         }
-      ],
-      "notifyParties":[
-         {
+      },
+      "notifyParties": {
             "@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
             "@type": "@id"
-         }
-      ],
+      }
       "shippedOnBoardDate":
       {
          "@id": "https://schema.org/DateTime",
