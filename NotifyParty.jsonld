@@ -3,68 +3,68 @@
    {
       "notifyParty":
       {
-         "@id": "http://schema.org/Organization",
+         "@id": "https://schema.org/Organization",
          "@type": "@id"
 
       },
       "name": 
       {
-         "@id": "http://schema.org/name",
+         "@id": "https://schema.org/name",
          "@type": "@id"
       },
       "taxReference": 
       {
-         "@id": "http://schema.org/vatID",
+         "@id": "https://schema.org/vatID",
          "@type": "@id"
       },
       "partyRef":
       {
-         "@id": "http://schema.org/identifier",
+         "@id": "https://schema.org/identifier",
          "@type": "@id"
       },
       "organizationId":
       {
-         "@id": "http://schema.org/leiCode",
+         "@id": "https://schema.org/leiCode",
          "@type": "@id"
       },
       "address": 
       {
-         "@id": "http://schema.org/address",
+         "@id": "https://schema.org/address",
          "@type": "@id"
       },
       "street": 
       {
-         "@id": "http://schema.org/streetAddress",
+         "@id": "https://schema.org/streetAddress",
          "@type": "@id"
       },
       "city": 
       {
-         "@id": "http://schema.org/addressLocality",
+         "@id": "https://schema.org/addressLocality",
          "@type": "@id"
       },
       "state": 
       {
-         "@id": "http://schema.org/addressRegion",
+         "@id": "https://schema.org/addressRegion",
          "@type": "@id"
       },
       "country": 
       {
-         "@id": "http://schema.org/addressCountry",
+         "@id": "https://schema.org/addressCountry",
          "@type": "@id"
       },
       "postcode":
       {
-         "@id": "http://schema.org/postalCode",
+         "@id": "https://schema.org/postalCode",
          "@type": "@id"
       },
       "communicationDetails": 
       {
-         "@id": "http://schema.org/ContactPoint",
+         "@id": "https://schema.org/ContactPoint",
          "@type": "@id"
       },
       "email": 
       {
-         "@id": "http://schema.org/email",
+         "@id": "https://schema.org/email",
          "@type": "@id"
       }
    }

@@ -3,33 +3,33 @@
    {
       "consignmentItem":
       {
-         "@id": "http://schema.org/Product",
+         "@id": "https://schema.org/Product",
          "@type": "@id"
 
       },
       "sequence": 
       {
-         "@id": "http://schema.org/position",
+         "@id": "https://schema.org/position",
          "@type": "@id"
       },
       "information": 
       {
-         "@id": "http://schema.org/description",
+         "@id": "https://schema.org/description",
          "@type": "@id"
       },
       "grossWeight":
       {
-         "@id": "http://schema.org/weight",
+         "@id": "https://schema.org/weight",
          "@type": "@id"
       },
       "value":
       {
-         "@id": "http://schema.org/QuantitativeValue",
+         "@id": "https://schema.org/QuantitativeValue",
          "@type": "@id"
       },
       "unit": 
       {
-         "@id": "http://schema.org/unitCode",
+         "@id": "https://schema.org/unitCode",
          "@type": "@id"
       }
    }

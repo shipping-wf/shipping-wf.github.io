@@ -30,12 +30,12 @@
       ],
       "serviceMode": 
       {
-         "@id": "http://schema.org/serviceType",
+         "@id": "https://schema.org/serviceType",
          "@type": "@id"
       },
       "transportEquipmentQuantity": 
       {
-         "@id": "http://schema.org/Quantity",
+         "@id": "https://schema.org/Quantity",
          "@type": "@id"
       },
       "charges":
@@ -51,28 +51,28 @@
       ],
       "shippedOnBoardDate":
       {
-         "@id": "http://schema.org/DateTime",
+         "@id": "https://schema.org/DateTime",
          "@type": "@id"
       },
       "billOfLadingNumber":
       {
-         "@id": "http://schema.org/identifier",
+         "@id": "https://schema.org/identifier",
          "@type": "@id"
       },
       "bookingNumber": 
       {
-         "@id": "http://schema.org/reservationId",
+         "@id": "https://schema.org/reservationId",
          "@type": "@id"
       },
       "negotiable":
       {
          "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isNegotiable.md",
-         "@type": "http://schema.org/Boolean"
+         "@type": "https://schema.org/Boolean"
       },
       "eBL":
       {
          "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isElectronic.md",
-         "@type": "http://schema.org/Boolean"
+         "@type": "https://schema.org/Boolean"
       }
    }
 }

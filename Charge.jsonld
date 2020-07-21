@@ -3,53 +3,53 @@
    {
       "charge":
       {
-         "@id": "http://schema.org/DeliveryChargeSpecification",
+         "@id": "https://schema.org/DeliveryChargeSpecification",
          "@type": "@id"
 
       },
       "chargeCode": 
       {
-         "@id": "http://schema.org/identifier",
+         "@id": "https://schema.org/identifier",
          "@type": "@id"
       },
       "paymentTerm": 
       {
-         "@id": "http://schema.org/PaymentMethod",
+         "@id": "https://schema.org/PaymentMethod",
          "@type": "@id"
       },
       "chargeText":
       {
-         "@id": "http://schema.org/priceSpecification",
+         "@id": "https://schema.org/priceSpecification",
          "@type": "@id"
       },
       "rate":
       {
-         "@id": "http://schema.org/shippingRate",
+         "@id": "https://schema.org/shippingRate",
          "@type": "@id"
       },
       "currency": 
       {
-         "@id": "http://schema.org/currency",
+         "@id": "https://schema.org/currency",
          "@type": "@id"
       },
       "amount":
       {
-         "@id": "http://schema.org/value",
+         "@id": "https://schema.org/value",
          "@type": "@id"
       },
       "freightPayableAt":
       {
-         "@id": "http://schema.org/Place",
+         "@id": "https://schema.org/Place",
          "@type": "@id"
       },
       "chargePayerPartyRef":
       {
-         "@id": "http://schema.org/leiCode",
+         "@id": "https://schema.org/leiCode",
          "@type": "@id"
       },
       "chargePayerPartyName":
       {
-         "@id": "http://schema.org/name",
+         "@id": "https://schema.org/name",
          "@type": "@id"
       }
    }
