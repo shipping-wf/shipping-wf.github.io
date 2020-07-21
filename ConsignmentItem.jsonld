@@ -1,0 +1,36 @@
+{
+   "@context":
+   {
+      "consignmentItem":
+      {
+         "@id": "http://schema.org/Product",
+         "@type": "@id"
+
+      },
+      "sequence": 
+      {
+         "@id": "http://schema.org/position",
+         "@type": "@id"
+      },
+      "information": 
+      {
+         "@id": "http://schema.org/description",
+         "@type": "@id"
+      },
+      "grossWeight":
+      {
+         "@id": "http://schema.org/weight",
+         "@type": "@id"
+      },
+      "value":
+      {
+         "@id": "http://schema.org/QuantitativeValue",
+         "@type": "@id"
+      },
+      "unit": 
+      {
+         "@id": "http://schema.org/unitCode",
+         "@type": "@id"
+      }
+   }
+}

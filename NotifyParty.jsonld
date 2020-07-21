@@ -1,0 +1,71 @@
+{
+   "@context":
+   {
+      "notifyParty":
+      {
+         "@id": "http://schema.org/Organization",
+         "@type": "@id"
+
+      },
+      "name": 
+      {
+         "@id": "http://schema.org/name",
+         "@type": "@id"
+      },
+      "taxReference": 
+      {
+         "@id": "http://schema.org/vatID",
+         "@type": "@id"
+      },
+      "partyRef":
+      {
+         "@id": "http://schema.org/identifier",
+         "@type": "@id"
+      },
+      "organizationId":
+      {
+         "@id": "http://schema.org/leiCode",
+         "@type": "@id"
+      },
+      "address": 
+      {
+         "@id": "http://schema.org/address",
+         "@type": "@id"
+      },
+      "street": 
+      {
+         "@id": "http://schema.org/streetAddress",
+         "@type": "@id"
+      },
+      "city": 
+      {
+         "@id": "http://schema.org/addressLocality",
+         "@type": "@id"
+      },
+      "state": 
+      {
+         "@id": "http://schema.org/addressRegion",
+         "@type": "@id"
+      },
+      "country": 
+      {
+         "@id": "http://schema.org/addressCountry",
+         "@type": "@id"
+      },
+      "postcode":
+      {
+         "@id": "http://schema.org/postalCode",
+         "@type": "@id"
+      },
+      "communicationDetails": 
+      {
+         "@id": "http://schema.org/ContactPoint",
+         "@type": "@id"
+      },
+      "email": 
+      {
+         "@id": "http://schema.org/email",
+         "@type": "@id"
+      }
+   }
+}

@@ -1,0 +1,46 @@
+{
+   "@context":
+   {
+      "BillOfLading":
+      {
+         "@id": "http://schema.org/Order",
+         "@type": "@id"
+
+      },
+      "serviceMode": 
+      {
+         "@id": "http://schema.org/",
+         "@type": "@id"
+      },
+      "transportEquipmentQuantity": 
+      {
+         "@id": "http://schema.org/Quantity",
+         "@type": "@id"
+      },
+      "shippedOnBoardDate":
+      {
+         "@id": "http://schema.org/DateTime",
+         "@type": "@id"
+      },
+      "billOfLadingNumber":
+      {
+         "@id": "http://schema.org/identifier",
+         "@type": "@id"
+      },
+      "bookingNumber": 
+      {
+         "@id": "http://schema.org/reservationId",
+         "@type": "@id"
+      },
+      "negotiable":
+      {
+         "@id": "https://shipping-wf.github.io/isNegotiable.md",
+         "@type": "http://schema.org/Boolean"
+      },
+      "eBL":
+      {
+         "@id": "https://shipping-wf.github.io/isElectronic.md",
+         "@type": "http://schema.org/Boolean"
+      }
+   }
+}
