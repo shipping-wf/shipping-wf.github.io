@@ -1,11 +1,7 @@
 {
    "@context":
    {
-      "carrier":
-      {
-         "@id": "https://schema.org/Organization",
-         "@type": "@id"
-      },
+      "carrier": "https://shipping-wf.github.io/carrier",
       "carrierCode": 
       {
          "@id": "https://schema.org/identifier",
