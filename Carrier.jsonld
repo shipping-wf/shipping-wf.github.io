@@ -1,6 +1,12 @@
 {
    "@context":
    {
+      "carrier":
+      {
+         "@id": "http://schema.org/Organization",
+         "@type": "@id"
+
+      },
       "carrierCode": 
       {
          "@id": "http://schema.org/identifier",
