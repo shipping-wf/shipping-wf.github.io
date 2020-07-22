@@ -2,7 +2,7 @@
    "@context":
    {
       "billOfLading": "https://shipping-wf.github.io/billOfLading",
-      "carrier":
+          "carrier":
       {
          "@id": "https://shipping-wf.github.io/Carrier.jsonld",
          "@type": "@id"
@@ -22,16 +22,8 @@
          "@id": "https://shipping-wf.github.io/ConsignmentItems.jsonld",
          "@type": "@id"
       },
-      "serviceMode": 
-      {
-         "@id": "https://schema.org/serviceType",
-         "@type": "@id"
-      },
-      "transportEquipmentQuantity": 
-      {
-         "@id": "https://schema.org/Quantity",
-         "@type": "@id"
-      },
+      "serviceMode": "https://schema.org/serviceType",
+      "transportEquipmentQuantity": "https://schema.org/Quantity",
       "charges":
       {
          "@id": "https://shipping-wf.github.io/Charges.jsonld",
@@ -42,30 +34,10 @@
             "@id": "https://shipping-wf.github.io/NotifyParties.jsonld",
             "@type": "@id"
       },
-      "shippedOnBoardDate":
-      {
-         "@id": "https://schema.org/departureTime",
-         "@type": "@id"
-      },
-      "billOfLadingNumber":
-      {
-         "@id": "https://schema.org/identifier",
-         "@type": "@id"
-      },
-      "bookingNumber": 
-      {
-         "@id": "https://schema.org/reservationId",
-         "@type": "@id"
-      },
-      "negotiable":
-      {
-         "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isNegotiable.md",
-         "@type": "https://schema.org/Boolean"
-      },
-      "eBL":
-      {
-         "@id": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isElectronic.md",
-         "@type": "https://schema.org/Boolean"
-      }
+      "shippedOnBoardDate":"https://schema.org/departureTime",
+      "billOfLadingNumber":"https://schema.org/identifier",
+      "bookingNumber": "https://schema.org/reservationId",
+      "negotiable":"https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isNegotiable.md",
+      "eBL": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isElectronic.md"
    }
 }

@@ -1,35 +1,15 @@
 {
    "@context":
    {
-      "consignmentItem":
-      {
-         "@id": "https://schema.org/Product",
-         "@type": "@id"
-      },
-      "sequence": 
-      {
-         "@id": "https://schema.org/position",
-         "@type": "@id"
-      },
-      "information": 
-      {
-         "@id": "https://schema.org/description",
-         "@type": "@id"
-      },
+      "consignmentItem": "https://edi3.org/specs/edi3-transport/develop/vocab/ConsignmentItem"
+      "sequence": "https://schema.org/position",
+      "information": "https://schema.org/description",
       "grossWeight":
       {
          "@id": "https://schema.org/weight",
          "@type": "@id"
       },
-      "value":
-      {
-         "@id": "https://schema.org/QuantitativeValue",
-         "@type": "@id"
-      },
-      "unit": 
-      {
-         "@id": "https://schema.org/unitCode",
-         "@type": "@id"
-      }
+      "value": "https://schema.org/QuantitativeValue",
+      "unit": "https://schema.org/unitCode"
    }
 }

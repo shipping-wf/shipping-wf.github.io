@@ -1,55 +1,15 @@
 {
    "@context":
    {
-      "charge":
-      {
-         "@id": "https://schema.org/DeliveryChargeSpecification",
-         "@type": "@id"
-      },
-      "chargeCode": 
-      {
-         "@id": "https://schema.org/identifier",
-         "@type": "@id"
-      },
-      "paymentTerm": 
-      {
-         "@id": "https://schema.org/PaymentMethod",
-         "@type": "@id"
-      },
-      "chargeText":
-      {
-         "@id": "https://schema.org/priceSpecification",
-         "@type": "@id"
-      },
-      "rate":
-      {
-         "@id": "https://schema.org/shippingRate",
-         "@type": "@id"
-      },
-      "currency": 
-      {
-         "@id": "https://schema.org/currency",
-         "@type": "@id"
-      },
-      "amount":
-      {
-         "@id": "https://schema.org/value",
-         "@type": "@id"
-      },
-      "freightPayableAt":
-      {
-         "@id": "https://schema.org/Place",
-         "@type": "@id"
-      },
-      "chargePayerPartyRef":
-      {
-         "@id": "https://schema.org/leiCode",
-         "@type": "@id"
-      },
-      "chargePayerPartyName":
-      {
-         "@id": "https://schema.org/name",
-         "@type": "@id"
-      }
+      "charge": "https://shipping-wf.github.io/Charge.jsonld",
+      "chargeCode": "https://schema.org/identifier",
+      "paymentTerm": "https://schema.org/PaymentMethod",
+      "chargeText": "https://schema.org/priceSpecification",
+      "rate": "https://schema.org/shippingRate",
+      "currency": "https://schema.org/currency",
+      "amount": "https://schema.org/value",
+      "freightPayableAt": "https://schema.org/Place",
+      "chargePayerPartyRef": "https://schema.org/leiCode",
+      "chargePayerPartyName": "https://schema.org/name",
    }
 }

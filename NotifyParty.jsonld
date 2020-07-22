@@ -1,70 +1,26 @@
 {
    "@context":
    {
-      "notifyParty":
-      {
-         "@id": "https://schema.org/Organization",
-         "@type": "@id"
-      },
-      "name": 
-      {
-         "@id": "https://schema.org/name",
-         "@type": "@id"
-      },
-      "taxReference": 
-      {
-         "@id": "https://schema.org/vatID",
-         "@type": "@id"
-      },
-      "partyRef":
-      {
-         "@id": "https://schema.org/identifier",
-         "@type": "@id"
-      },
-      "organizationId":
-      {
-         "@id": "https://schema.org/leiCode",
-         "@type": "@id"
-      },
+      "notifyParty": https://shipping-wf.github.io/NotifyParty.jsonld
+      "name": "https://schema.org/name",
+      "taxReference": "https://schema.org/vatID",
+      "partyRef": "https://schema.org/identifier",
+      "organizationId": "https://schema.org/leiCode",
       "address": 
       {
          "@id": "https://schema.org/address",
          "@type": "@id"
       },
-      "street": 
-      {
-         "@id": "https://schema.org/streetAddress",
-         "@type": "@id"
-      },
-      "city": 
-      {
-         "@id": "https://schema.org/addressLocality",
-         "@type": "@id"
-      },
-      "state": 
-      {
-         "@id": "https://schema.org/addressRegion",
-         "@type": "@id"
-      },
-      "country": 
-      {
-         "@id": "https://schema.org/addressCountry",
-         "@type": "@id"
-      },
-      "postcode":
-      {
-         "@id": "https://schema.org/postalCode",
-         "@type": "@id"
-      },
+      "street": "https://schema.org/streetAddress",
+      "city": "https://schema.org/addressLocality",
+      "state": "https://schema.org/addressRegion",
+      "country": "https://schema.org/addressCountry",
+      "postcode": "https://schema.org/postalCode",
       "communicationDetails": 
       {
          "@id": "https://schema.org/ContactPoint",
          "@type": "@id"
       },
-      "email": 
-      {
-         "@id": "https://schema.org/email",
-         "@type": "@id"
-      }
+      "email": "https://schema.org/email",
    }
 }
