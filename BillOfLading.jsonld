@@ -44,7 +44,7 @@
       },
       "shippedOnBoardDate":
       {
-         "@id": "https://schema.org/DateTime",
+         "@id": "https://schema.org/departureTime",
          "@type": "@id"
       },
       "billOfLadingNumber":
