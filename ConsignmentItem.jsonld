@@ -1,7 +1,7 @@
 {
    "@context":
    {
-      "consignmentItem": "https://edi3.org/specs/edi3-transport/develop/vocab/ConsignmentItem"
+      "consignmentItem": "https://edi3.org/specs/edi3-transport/develop/vocab/ConsignmentItem",
       "sequence": "https://schema.org/position",
       "information": "https://schema.org/description",
       "grossWeight":

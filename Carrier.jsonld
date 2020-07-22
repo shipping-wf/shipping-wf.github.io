@@ -2,9 +2,9 @@
    "@context":
    {
       "carrier": "https://shipping-wf.github.io/carrier",
-      "carrierCode": "https://schema.org/identifier",,
-      "name": "@id": "https://schema.org/name",
-      "taxId": "@id": "https://schema.org/vatID",
+      "carrierCode": "https://schema.org/identifier",
+      "name": "https://schema.org/name",
+      "taxId": "https://schema.org/vatID",
       "address": 
       {
          "@id": "https://schema.org/address",
