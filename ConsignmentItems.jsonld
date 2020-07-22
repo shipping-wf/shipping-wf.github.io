@@ -1,0 +1,10 @@
+{
+	"@context": {
+		"consignmentmentItems":[
+			{
+				"@id": "https://edi3.org/specs/edi3-transport/develop/vocab/ConsignmentItem",
+				"@type": "@id"
+			}
+		]
+	}
+}

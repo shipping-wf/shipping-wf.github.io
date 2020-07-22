@@ -1,0 +1,11 @@
+{
+	"@context":
+	{
+		"NotifyParties":[
+			{
+				"@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
+				"@type": "@id"
+			}
+		]
+	}
+}
