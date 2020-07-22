@@ -1,11 +1,7 @@
 {
    "@context":
    {
-      "BillOfLading":
-      {
-         "@id": "https://schema.org/Order",
-         "@type": "@id"
-      },
+      "billOfLading": "https://shipping-wf.github.io/billOfLading",
       "carrier":
       {
          "@id": "https://shipping-wf.github.io/Carrier.jsonld",
