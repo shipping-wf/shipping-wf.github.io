@@ -21,6 +21,6 @@
          "@id": "https://schema.org/ContactPoint",
          "@type": "@id"
       },
-      "email": "https://schema.org/email",
+      "email": "https://schema.org/email"
    }
 }
