@@ -1,7 +1,7 @@
 {
    "@context":
    {
-      "carrier": "https://shipping-wf.github.io/carrier",
+      "carrier": "https://shipping-wf.github.io/Carrier.jsonld",
       "carrierCode": "https://schema.org/identifier",
       "name": "https://schema.org/name",
       "taxId": "https://schema.org/vatID",
