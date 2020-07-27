@@ -71,7 +71,7 @@
       "chargePayerPartyName": "https://schema.org/name",
       "notifyParties":
       {
-            "@id": "https://shipping-wf.github.io/notifyParty.jsonld",
+            "@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
             "@container": "@set"
       },
       "shippedOnBoardDate":"https://schema.org/departureTime",
