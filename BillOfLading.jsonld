@@ -57,7 +57,7 @@
       "transportEquipmentQuantity": "https://schema.org/Quantity",
       "charges":
       {
-         "@id": "https://shipping-wf.github.io/Charges.jsonld",
+         "@id": "https://shipping-wf.github.io/Charge.jsonld",
          "@container": "@set"
       },
       "chargeCode": "https://schema.org/identifier",
@@ -71,7 +71,7 @@
       "chargePayerPartyName": "https://schema.org/name",
       "notifyParties":
       {
-            "@id": "https://shipping-wf.github.io/NotifyParties.jsonld",
+            "@id": "https://shipping-wf.github.io/notifyParty.jsonld",
             "@container": "@set"
       },
       "shippedOnBoardDate":"https://schema.org/departureTime",
