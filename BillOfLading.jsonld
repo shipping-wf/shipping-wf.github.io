@@ -58,7 +58,7 @@
       "charges":
       {
          "@id": "https://shipping-wf.github.io/Charges.jsonld",
-         "@type": "@id"
+         "@container": "@set"
       },
       "chargeCode": "https://schema.org/identifier",
       "paymentTerm": "https://schema.org/PaymentMethod",
@@ -72,7 +72,7 @@
       "notifyParties":
       {
             "@id": "https://shipping-wf.github.io/NotifyParties.jsonld",
-            "@type": "@id"
+            "@container": "@set"
       },
       "shippedOnBoardDate":"https://schema.org/departureTime",
       "billOfLadingNumber":"https://schema.org/identifier",
