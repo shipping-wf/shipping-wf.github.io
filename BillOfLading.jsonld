@@ -2,64 +2,32 @@
    "@context":
    {
       "billOfLading": "https://shipping-wf.github.io/BillOfLading.jsonld",
-      "address": 
-      {
-         "@id": "https://schema.org/address",
-         "@type": "@id"
-      },
+      "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
       "city": "https://schema.org/addressLocality",
       "state": "https://schema.org/addressRegion",
       "country": "https://schema.org/addressCountry",
       "postcode": "https://schema.org/postalCode",
-      "contactDetails": 
-      {
-         "@id": "https://schema.org/ContactPoint",
-         "@type": "@id"
-      },
+      "contactDetails": "https://schema.org/ContactPoint",
       "email": "https://schema.org/email",
-      "carrier":
-      {
-         "@id": "https://shipping-wf.github.io/Carrier.jsonld",
-         "@type": "@id"
-      },
+      "carrier":"https://shipping-wf.github.io/Carrier.jsonld",
       "carrierCode": "https://schema.org/identifier",
       "name": "https://schema.org/name",
       "taxId": "https://schema.org/vatID",
-      "consignor":
-      {
-         "@id": "https://shipping-wf.github.io/Consignor.jsonld",
-         "@type": "@id" 
-      },
+      "consignor":"https://shipping-wf.github.io/Consignor.jsonld",
       "taxReference": "https://schema.org/vatID",
       "partyRef": "https://schema.org/identifier",
       "organizationId": "https://schema.org/leiCode",
-      "consignee":
-      {
-         "@id": "https://shipping-wf.github.io/Consignee.jsonld",
-         "@type": "@id"
-      },
-      "consignmentItems":
-      {
-         "@id": "https://shipping-wf.github.io/ConsignmentItems.jsonld",
-         "@type": "@id"
-      },
+      "consignee":"https://shipping-wf.github.io/Consignee.jsonld",
+      "consignmentItems":"https://shipping-wf.github.io/ConsignmentItems.jsonld",
       "sequence": "https://schema.org/position",
       "information": "https://schema.org/description",
-      "grossWeight":
-      {
-         "@id": "https://schema.org/weight",
-         "@type": "@id"
-      },
+      "grossWeight":"https://schema.org/weight",
       "value": "https://schema.org/QuantitativeValue",
       "unit": "https://schema.org/unitCode",
       "serviceMode": "https://schema.org/serviceType",
       "transportEquipmentQuantity": "https://schema.org/Quantity",
-      "charges":
-      {
-         "@id": "https://shipping-wf.github.io/Charge.jsonld",
-         "@container": "@set"
-      },
+      "charges":"https://shipping-wf.github.io/Charge.jsonld",
       "chargeCode": "https://schema.org/identifier",
       "paymentTerm": "https://schema.org/PaymentMethod",
       "chargeText": "https://schema.org/priceSpecification",
@@ -69,15 +37,11 @@
       "freightPayableAt": "https://schema.org/Place",
       "chargePayerPartyRef": "https://schema.org/leiCode",
       "chargePayerPartyName": "https://schema.org/name",
-      "notifyParties":
-      {
-            "@id": "https://shipping-wf.github.io/NotifyParty.jsonld",
-            "@container": "@set"
-      },
+      "notifyParties": "https://shipping-wf.github.io/NotifyParty.jsonld",
       "shippedOnBoardDate":"https://schema.org/departureTime",
       "billOfLadingNumber":"https://schema.org/identifier",
       "bookingNumber": "https://schema.org/reservationId",
-      "negotiable":"https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isNegotiable.md",
-      "eBL": "https://github.com/shipping-wf/shipping-wf.github.io/blob/master/isElectronic.md"
+      "negotiable":"https://shipping-wf.github.io/Negotiable",
+      "eBL": "https://shipping-wf.github.io/isElectronic"
    }
 }
