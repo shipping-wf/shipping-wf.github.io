@@ -5,21 +5,13 @@
       "carrierCode": "https://schema.org/identifier",
       "name": "https://schema.org/name",
       "taxId": "https://schema.org/vatID",
-      "address": 
-      {
-         "@id": "https://schema.org/address",
-         "@type": "@id"
-      },
+      "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
       "city": "https://schema.org/addressLocality",
       "state": "https://schema.org/addressRegion",
       "country": "https://schema.org/addressCountry",
       "postcode": "https://schema.org/postalCode",
-      "contactDetails": 
-      {
-         "@id": "https://schema.org/ContactPoint",
-         "@type": "@id"
-      },
+      "contactDetails": "https://schema.org/ContactPoint",
       "email": "https://schema.org/email"
    }
 }

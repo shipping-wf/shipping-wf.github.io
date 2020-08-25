@@ -6,21 +6,13 @@
       "taxReference": "https://schema.org/vatID",
       "partyRef": "https://schema.org/identifier",
       "organizationId": "https://schema.org/leiCode",
-      "address": 
-      {
-         "@id": "https://schema.org/address",
-         "@type": "@id"
-      },
+      "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
       "city": "https://schema.org/addressLocality",
       "state": "https://schema.org/addressRegion",
       "country": "https://schema.org/addressCountry",
       "postcode": "https://schema.org/postalCode",
-      "communicationDetails": 
-      {
-         "@id": "https://schema.org/ContactPoint",
-         "@type": "@id"
-      },
+      "communicationDetails": "https://schema.org/ContactPoint",
       "email": "https://schema.org/email"
    }
 }
