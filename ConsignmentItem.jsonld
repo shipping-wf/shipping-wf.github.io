@@ -10,6 +10,7 @@
          "@type": "@id"
       },
       "value": "https://schema.org/QuantitativeValue",
-      "unit": "https://schema.org/unitCode"
+      "unit": "https://schema.org/unitCode",
+      "chargedForBy": "https://shipping-wf.github.io/Charge.jsonld"
    }
 }

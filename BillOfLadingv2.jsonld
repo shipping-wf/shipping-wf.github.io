@@ -16,12 +16,12 @@
       "taxId": "https://schema.org/vatID",
       "consignor":"https://shipping-wf.github.io/Consignor.jsonld",
       "taxReference": "https://schema.org/vatID",
-      "partyRef": https://schema.org/identifier",
+      "businessPartyIdentifier": "https://schema.org/identifier",
       "organizationId": "https://schema.org/leiCode",
       "consignee":"https://shipping-wf.github.io/Consignee.jsonld",
-      "consignmentItems": {
-	 "@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
-	 "@container":"@set"
+      "consignmentItems":{
+	"@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
+        "@container:"@set"
       },
       "sequence": "https://schema.org/position",
       "information": "https://schema.org/description",
