@@ -4,7 +4,7 @@
       "consignee": "https://shipping-wf.github.io/Consignee.jsonld",
       "name": "https://schema.org/name",
       "taxReference": "https://schema.org/vatID",
-      "partyRef": "https://schema.org/identifier",
+      "partyRef": "https://shipping-wf.github.io/partyReference",
       "organizationId": "https://schema.org/leiCode",
       "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
