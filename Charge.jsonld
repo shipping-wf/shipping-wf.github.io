@@ -11,6 +11,6 @@
       "freightPayableAt": "https://schema.org/Place",
       "chargePayerPartyRef": "https://schema.org/leiCode",
       "chargePayerPartyName": "https://schema.org/name",
-      "forConsignmentItem": "https://edi3.org/specs/edi3-transport/develop/vocab/ConsignmentItem"
+      "forConsignmentItem": "https://shipping-wf.github.io/ConsignmentItem.jsonld"
    }
 }
