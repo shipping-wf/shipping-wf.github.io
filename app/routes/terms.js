@@ -48,7 +48,12 @@ var expand = async function(req, res) {
 }
 
 var flatten = async function(req, res) {
-   const flattened = await jsonld.flatten(req.body);
+  let context = req.body["@context"];
+  if (context == null) { 
+	context = getLinkHeader(req);
+  }
+
+   const flattened = await jsonld.flatten(req.body, {expandContext: context});
    res.set('content-type','application/json+ld');
    res.send(flattened);
 }
