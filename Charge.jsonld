@@ -16,7 +16,7 @@
 	"@type":"@id"
       },
       "forBoL": {
-	"@id":"https://shipping-wf.github.io/BillOfLading.jsonld"
+	"@id":"https://shipping-wf.github.io/BillOfLading.jsonld",
 	"@type":"@id"
       }
    }
