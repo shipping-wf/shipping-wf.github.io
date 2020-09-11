@@ -1,0 +1,37 @@
+{
+  "@context": ["https://shipping-wf.github.io/BillOfLading.jsonld", "https://shipping-wf.github.io/ConsignmentItem.jsonld", "https://shipping-wf.github.io/Charge.jsonld"],
+  "@type": "billOfLading",
+  "consignmentItems": [
+    {
+      "@id":"consignmentItem1",
+      "sequence": 1,
+      "information": "info",
+      "grossWeight": {
+        "value": 12,
+        "unit": "lbs"
+      },
+      "chargedForBy": {
+        "@id": "charges1",
+        "@type": "https://shipping-wf.github.io/Charge.jsonld",
+        "chargeCode": "additionalCharges",
+        "paymentTerm": "collect",
+        "chargeText": "charge",
+        "rate": 4,
+        "currency": "USD",
+        "amount": 5,
+        "freightPayableAt": "Location",
+        "chargePayerPartyRef": "1234",
+        "chargePayerPartyName": "party Name"
+      }
+    }
+  ],
+  "serviceMode": "CY-CY",
+  "transportEquipmentQuantity": 1,
+  "shippedOnBoardDate": "2020-04-15T03:41:00Z",
+  "billOfLadingNumber": "05thJuneBILTest001",
+  "bookingNumber": [
+    "05thJuneTest001"
+  ],
+  "negotiable": true,
+  "eBL": true
+}

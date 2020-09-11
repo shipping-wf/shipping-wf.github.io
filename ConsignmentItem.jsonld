@@ -11,6 +11,9 @@
       },
       "value": "https://schema.org/QuantitativeValue",
       "unit": "https://schema.org/unitCode",
-      "chargedForBy": "https://shipping-wf.github.io/chargedForBy"
+      "chargedForBy": {
+	"@id":"https://shipping-wf.github.io/chargedForBy",
+	"@type":"@id"
+      }
    }
 }

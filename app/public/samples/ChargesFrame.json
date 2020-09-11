@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "consignmentItem": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
+      "sequence": "https://schema.org/position",
+      "information": "https://schema.org/description",
+      "grossWeight":
+      {
+         "@id": "https://schema.org/weight",
+         "@type": "@id"
+      },
+      "value": "https://schema.org/QuantitativeValue",
+      "unit": "https://schema.org/unitCode",
+      "chargedForBy": "https://shipping-wf.github.io/chargedForBy",
+    "charge": "https://shipping-wf.github.io/Charge.jsonld",
+      "chargeCode": "https://schema.org/identifier",
+      "paymentTerm": "https://schema.org/PaymentMethod",
+      "chargeText": "https://schema.org/priceSpecification",
+      "rate": "https://schema.org/shippingRate",
+      "currency": "https://schema.org/currency",
+      "amount": "https://schema.org/value",
+      "freightPayableAt": "https://schema.org/Place",
+      "chargePayerPartyRef": "https://schema.org/leiCode",
+      "chargePayerPartyName": "https://schema.org/name",
+    "forConsignmentItem": {"@reverse":"chargedForBy"}
+  },
+  "@type": "charge",
+  "@explicit": false,
+  "forConsignmentItem": {
+    "@explicit":false
+  }
+}
