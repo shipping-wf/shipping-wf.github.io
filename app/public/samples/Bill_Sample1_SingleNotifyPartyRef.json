@@ -1,0 +1,101 @@
+{
+  "@context": "https://shipping-wf.github.io/BillOfLading.jsonld",
+  "@type": "billOfLading",
+  "carrier": {
+    "carrierCode": "OCEA",
+    "name": "Ocean Carrier Inc",
+    "taxId": "MR025122NY78",
+    "address": {
+      "street": "PLUTONAS OLY",
+      "city": "HELSINKI",
+      "state": "HELSINKI",
+      "country": "FN",
+      "postcode": "95212"
+    },
+    "contactDetails": {
+      "email": "carrier@ocean.inc"
+    }
+  },
+  "consignor": {
+    "name": "Beneficial Cargo Owner",
+    "taxReference": "RK931142CY78",
+    "partyRef": "ben-car-own",
+    "organizationId": "8b840f26-dde7-4048-8c96-22f06f5095b0",
+    "address": {
+      "street": "NEW DON AVENUE",
+      "city": "HEFEI",
+      "state": "ANHUI",
+      "country": "CN",
+      "postcode": "40210"
+    },
+    "communicationDetails": {
+      "email": "bco@consignor.com"
+    }
+  },
+  "consignee": {
+    "@type": "consignee",
+    "name": "CONSIGNEE CO LLC",
+    "taxReference": "TX104926210",
+    "partyRef": "consignee-co-llc",
+    "organizationId": "b66d79a8-82b2-41b4-aa89-2dc9c26aea22",
+    "address": {
+      "street": "85, DISRUPTOR ROAD",
+      "city": "APPLE PARK",
+      "state": "NEW JERSEY",
+      "country": "US",
+      "postcode": "12345"
+    },
+    "communicationDetails": {
+      "email": "consignee-ff@ibm.com"
+    }
+  },
+  "consignmentItems": [
+    {
+      "sequence": 1,
+      "information": "420 CARTONS LCDTV,MODEL: UU33NU6988FXZA",
+      "grossWeight": {
+        "value": 4410,
+        "unit": "kgs"
+      }
+    }
+  ],
+  "serviceMode": "CY-CY",
+  "transportEquipmentQuantity": 1,
+  "charges": [
+     {
+      "chargeCode": "freightCharges",
+      "paymentTerm": "collect",
+      "chargeText": "charge",
+      "rate": 4,
+      "currency": "USD",
+      "amount": 5,
+      "freightPayableAt": "Location",
+      "chargePayerPartyRef": "1234",
+      "chargePayerPartyName": "party Name"
+    }
+  ],
+  "notifyParties": {
+      "name": "GREAT FIND PURCHASING LLC",
+      "taxReference": "DR19228384JS01",
+      "partyRef": "great-find-purchasing",
+      "organizationId": "1c6b016e-376a-4f3b-857c-c85a0d96ae1f",
+      "address": {
+        "street": "100 GREAT FIND DRIVE",
+        "city": "DUBLIN DC",
+        "state": "DUBLIN",
+        "country": "GA",
+        "postcode": "30011"
+      },
+      "communicationDetails": {
+        "email": "consignee@freighforwarder.com",
+        "contactName": "Mark Nos"
+      }
+  },
+  "shippedOnBoardDate": "2020-04-15T03:41:00Z",
+  "billOfLadingNumber": "05thJuneBIL1223932",
+  "bookingNumber": [
+    "05thJuneBIL1223932"
+  ],
+  "negotiable": true,
+  "eBL": true
+}

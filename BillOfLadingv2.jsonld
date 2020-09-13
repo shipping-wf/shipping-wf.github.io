@@ -2,6 +2,7 @@
    "@context":
    {
       "billOfLading": "https://shipping-wf.github.io/BillOfLading.jsonld",
+      "billOfLadingNumber":"@id",
       "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
       "city": "https://schema.org/addressLocality",
@@ -17,11 +18,12 @@
       "consignor":"https://shipping-wf.github.io/Consignor.jsonld",
       "taxReference": "https://schema.org/vatID",
       "businessPartyIdentifier": "https://shipping-wf.github.io/partyReference",
+      "partyRef": "https://shipping-wf.github.io/partyReference",
       "organizationId": "https://schema.org/leiCode",
       "consignee":"https://shipping-wf.github.io/Consignee.jsonld",
       "consignmentItems":{
 	"@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
-        "@container:"@set"
+	"@container":"@set"
       },
       "sequence": "https://schema.org/position",
       "information": "https://schema.org/description",
@@ -48,7 +50,6 @@
 	"@container":"@set"
        },
       "shippedOnBoardDate":"https://schema.org/departureTime",
-      "billOfLadingNumber":"https://schema.org/identifier",
       "bookingNumber": "https://schema.org/reservationId",
       "negotiable":"https://shipping-wf.github.io/Negotiable",
       "eBL": "https://shipping-wf.github.io/isElectronic"

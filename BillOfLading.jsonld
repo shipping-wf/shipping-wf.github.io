@@ -19,9 +19,9 @@
       "partyRef": "https://shipping-wf.github.io/partyReference",
       "organizationId": "https://schema.org/leiCode",
       "consignee":"https://shipping-wf.github.io/Consignee.jsonld",
-      "consignmentItems": {
-	 "@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
-	 "@container":"@set"
+      "consignmentItems":{
+	"@id": "https://shipping-wf.github.io/ConsignmentItem.jsonld",
+	"@container":"@set"
       },
       "sequence": "https://schema.org/position",
       "information": "https://schema.org/description",
