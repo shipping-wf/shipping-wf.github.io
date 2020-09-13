@@ -14,5 +14,6 @@
   ],
   "@type": "billOfLading",
   "@explicit": false,
+  "eBL": {"@default":"false"},
   "charges": {}
 }

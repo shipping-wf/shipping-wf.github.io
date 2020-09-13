@@ -1,5 +1,9 @@
 {
-  "@context": "https://shipping-wf.github.io/BillOfLadingv2.jsonld",
+  "@context": [
+	"https://shipping-wf.github.io/BillOfLadingv2.jsonld",
+	"https://shipping-wf.github.io/ConsignmentItem.jsonld",
+        "https://shipping-wf.github.io/Charge.jsonld"
+  ],
   "@type": "billOfLading",
   "@id": "05thJuneBIL1223932",
   "carrier": {
