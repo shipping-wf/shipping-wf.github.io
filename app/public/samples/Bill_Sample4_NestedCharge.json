@@ -1,6 +1,7 @@
 {
   "@context": "https://shipping-wf.github.io/BillOfLadingv2.jsonld",
   "@type": "billOfLading",
+  "@id": "05thJuneBIL1223932",
   "carrier": {
     "carrierCode": "OCEA",
     "name": "Ocean Carrier Inc",

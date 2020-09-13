@@ -72,23 +72,38 @@ var compact = async function(req, res) {
   res.send(compacted);
 }
 
+var frame = async function(req, res) {
+    let context = req.body["@context"];
+    if (context == null) { 
+	    var contexturl = getLinkHeader(req);
+	    var doc = await axios.get(contextUrl);	
+	    context = doc.data;
+    }
+    console.log("Context is : " + JSON.stringify(context));
+
+    const framed = await jsonld.frame(req.body, "https://shipping-wf.github.io/app/public/samples/ChargesFrame.json", {expandContext: context});
+    res.set('content-type','application/json+ld');
+    res.send(framed);
+}
+
 router.post('/expand', function(req, res, next) {
 	console.log("Serving EXPAND: ");
-	expand(req, res)
+	expand(req, res);
 });
 
 router.post('/flatten', function(req, res, next) {
 	console.log("Serving FLATTEN");
-	flatten(req, res)
+	flatten(req, res);
 });
 
 router.post('/compact', function(req, res, next) {
 	console.log("Serving COMPACT");
-	compact(req, res)
+	compact(req, res);
 });
 
 router.post('/frame', function(req, res, next) {
-	console.log("Serving FRAME")
+	console.log("Serving FRAME");
+	frame(req, res);
 });
 
 module.exports = router;

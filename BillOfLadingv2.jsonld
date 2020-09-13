@@ -2,7 +2,6 @@
    "@context":
    {
       "billOfLading": "https://shipping-wf.github.io/BillOfLading.jsonld",
-      "billOfLadingNumber":"@id",
       "address":"https://schema.org/address", 
       "street": "https://schema.org/streetAddress",
       "city": "https://schema.org/addressLocality",
@@ -50,6 +49,7 @@
 	"@container":"@set"
        },
       "shippedOnBoardDate":"https://schema.org/departureTime",
+      "billOfLadingNumber":"https://schema.org/identifier",
       "bookingNumber": "https://schema.org/reservationId",
       "negotiable":"https://shipping-wf.github.io/Negotiable",
       "eBL": "https://shipping-wf.github.io/isElectronic"
