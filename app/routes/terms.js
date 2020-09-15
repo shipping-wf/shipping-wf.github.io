@@ -42,6 +42,9 @@ var expand = async function(req, res) {
   if (context == null) { 
 	context = getLinkHeader(req);
   }
+
+  console.log("Context is : " + JSON.stringify(context));
+
   const expanded = await jsonld.expand(req.body, {expandContext: context});
   res.set('content-type','application/json+ld');
   res.send(expanded);
@@ -61,9 +64,7 @@ var flatten = async function(req, res) {
 var compact = async function(req, res) {
   let context = req.body["@context"];
   if (context == null) { 
-	var contexturl = getLinkHeader(req);
-	var doc = await axios.get(contextUrl);	
-	context = doc.data;
+	context = getLinkHeader(req);
   }
   console.log("Context is : " + JSON.stringify(context));
 
@@ -73,15 +74,7 @@ var compact = async function(req, res) {
 }
 
 var frame = async function(req, res) {
-    let context = req.body["@context"];
-    if (context == null) { 
-	    var contexturl = getLinkHeader(req);
-	    var doc = await axios.get(contextUrl);	
-	    context = doc.data;
-    }
-    console.log("Context is : " + JSON.stringify(context));
-
-    const framed = await jsonld.frame(req.body, "https://shipping-wf.github.io/app/public/samples/ChargesFrame.json", {expandContext: context});
+    const framed = await jsonld.frame(req.body, "https://shipping-wf.github.io/app/public/samples/ChargesFrame.json");
     res.set('content-type','application/json+ld');
     res.send(framed);
 }

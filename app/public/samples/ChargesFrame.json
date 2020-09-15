@@ -1,5 +1,8 @@
 {
   "@context": [
+    "https://shipping-wf.github.io/BillOfLadingv2.jsonld",
+    "https://shipping-wf.github.io/ConsignmentItem.jsonld",
+    "https://shipping-wf.github.io/Charge.jsonld",
     {
       "forConsignmentItem": {
         "@reverse": "chargedForBy"
