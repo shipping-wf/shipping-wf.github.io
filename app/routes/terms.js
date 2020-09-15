@@ -75,8 +75,12 @@ var compact = async function(req, res) {
 
 var frame = async function(req, res) {
     const framed = await jsonld.frame(req.body, "https://shipping-wf.github.io/app/public/samples/ChargesFrame.json");
+    // expand it
+    framed['@context'] = getLinkHeader(req);
+    const expanded = await jsonld.expand(framed);
+
     res.set('content-type','application/json+ld');
-    res.send(framed);
+    res.send(expanded);
 }
 
 router.post('/expand', function(req, res, next) {
