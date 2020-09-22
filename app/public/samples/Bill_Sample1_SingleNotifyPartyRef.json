@@ -1,6 +1,4 @@
 {
-  "@context": "https://shipping-wf.github.io/BillOfLading.jsonld",
-  "@type": "billOfLading",
   "carrier": {
     "carrierCode": "OCEA",
     "name": "Ocean Carrier Inc",
@@ -94,7 +92,7 @@
   "shippedOnBoardDate": "2020-04-15T03:41:00Z",
   "billOfLadingNumber": "05thJuneBIL1223932",
   "bookingNumber": [
-    "05thJuneBIL1223932"
+    "OCEACBN9212341"
   ],
   "negotiable": true,
   "eBL": true
