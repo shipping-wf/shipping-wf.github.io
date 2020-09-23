@@ -1,0 +1,322 @@
+<div class="loader" *ngIf="loaderOn">
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
+<div class="form-wrapper" *ngIf="expandedDocument">
+  <div class="form-block">
+    <div class="d-flex">
+      <div class="cbn-block" *ngIf="jsonLdDocument['@id']">
+        <label>Bill of Lading Number : <span>{{jsonLdDocument['@id']}}</span></label>
+      </div>
+      <div class="cbn-block ml-2">
+        <label>Carrier Booking Number : 
+          <ng-container *ngFor="let item of jsonLdDocument['https://schema.org/reservationId']; let i = index">
+            <ng-container *ngIf="i === 0 && item['@value']">
+              <span>
+                {{item['@value']}}
+              </span>
+            </ng-container>
+          </ng-container>
+        </label>
+      </div>
+    </div>
+    <div class=" data-block">
+      <div class="d-flex flex-wrap justify-content-between">
+        <div class="input-textarea w-50-spaced">
+          <label>Shipper / Exporter</label>
+          <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/Consignor.jsonld']; let i = index">
+            <ng-container *ngIf="item['https://schema.org/name']">
+              <ng-container *ngFor="let name of item['https://schema.org/name']">
+                <ng-container *ngIf="name['@value']">
+                  <p>
+                    {{name['@value']}}
+                  </p>
+                </ng-container>
+              </ng-container>
+              <div class="mt-3">
+                <label>Address</label>
+                <ng-container *ngFor="let address of item['https://schema.org/address']">
+                  <ng-container *ngFor="let addressCountry of address['https://schema.org/addressCountry']">
+                    <p>
+                      {{addressCountry['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressLocality of address['https://schema.org/addressLocality']">
+                    <p>
+                      {{addressLocality['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressRegion of address['https://schema.org/addressRegion']">
+                    <p>
+                      {{addressRegion['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let postalCode of address['https://schema.org/postalCode']">
+                    <p>
+                      {{postalCode['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let streetAddress of address['https://schema.org/streetAddress']">
+                    <p>
+                      {{streetAddress['@value']}}
+                    </p>
+                  </ng-container>
+                </ng-container>
+              </div>
+              <div class="mt-3 ref" *ngIf="item['https://shipping-wf.github.io/partyReference']">
+                <label>Party Reference</label>
+                <ng-container *ngFor="let partyRef of item['https://shipping-wf.github.io/partyReference']">
+                  <p>
+                    {{partyRef['@value']}}
+                  </p>
+                </ng-container>
+              </div>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="input-textarea w-50-spaced">
+          <label>Consignee</label>
+          <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/Consignee.jsonld']; let i = index">
+            <ng-container *ngIf="item['https://schema.org/name']">
+              <ng-container *ngFor="let name of item['https://schema.org/name']">
+                <ng-container *ngIf="name['@value']">
+                  <p>
+                    {{name['@value']}}
+                  </p>
+                </ng-container>
+              </ng-container>
+              <div class="mt-3">
+                <label>Address</label>
+                <ng-container *ngFor="let address of item['https://schema.org/address']">
+                  <ng-container *ngFor="let addressCountry of address['https://schema.org/addressCountry']">
+                    <p>
+                      {{addressCountry['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressLocality of address['https://schema.org/addressLocality']">
+                    <p>
+                      {{addressLocality['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressRegion of address['https://schema.org/addressRegion']">
+                    <p>
+                      {{addressRegion['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let postalCode of address['https://schema.org/postalCode']">
+                    <p>
+                      {{postalCode['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let streetAddress of address['https://schema.org/streetAddress']">
+                    <p>
+                      {{streetAddress['@value']}}
+                    </p>
+                  </ng-container>
+                </ng-container>
+              </div>
+              <div class="mt-3 ref" *ngIf="item['https://shipping-wf.github.io/partyReference']">
+                <label>Party Reference</label>
+                <ng-container *ngFor="let partyRef of item['https://shipping-wf.github.io/partyReference']">
+                  <p>
+                    {{partyRef['@value']}}
+                  </p>
+                </ng-container>
+              </div>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="input-textarea w-50-spaced mt-1">
+          <label>Notify Party</label>
+          <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/NotifyParty.jsonld']; let i = index">
+            <div class="notifyPartiesBlock" [ngClass]="{'addBorder': (i === 1)}">
+              <ng-container *ngIf="item['https://schema.org/name']">
+                <ng-container *ngFor="let name of item['https://schema.org/name']">
+                  <ng-container *ngIf="name['@value']">
+                    <p>
+                      {{name['@value']}}
+                    </p>
+                  </ng-container>
+                </ng-container>
+                <div class="mt-3">
+                  <label>Address</label>
+                  <ng-container *ngFor="let address of item['https://schema.org/address']">
+                    <ng-container *ngFor="let addressCountry of address['https://schema.org/addressCountry']">
+                      <p>
+                        {{addressCountry['@value']}}
+                      </p>
+                    </ng-container>
+                    <ng-container *ngFor="let addressLocality of address['https://schema.org/addressLocality']">
+                      <p>
+                        {{addressLocality['@value']}}
+                      </p>
+                    </ng-container>
+                    <ng-container *ngFor="let addressRegion of address['https://schema.org/addressRegion']">
+                      <p>
+                        {{addressRegion['@value']}}
+                      </p>
+                    </ng-container>
+                    <ng-container *ngFor="let postalCode of address['https://schema.org/postalCode']">
+                      <p>
+                        {{postalCode['@value']}}
+                      </p>
+                    </ng-container>
+                    <ng-container *ngFor="let streetAddress of address['https://schema.org/streetAddress']">
+                      <p>
+                        {{streetAddress['@value']}}
+                      </p>
+                    </ng-container>
+                  </ng-container>
+                </div>
+                <div class="mt-3 ref" *ngIf="item['https://shipping-wf.github.io/partyReference']">
+                  <label>Party Reference</label>
+                  <ng-container *ngFor="let partyRef of item['https://shipping-wf.github.io/partyReference']">
+                    <p>
+                      {{partyRef['@value']}}
+                    </p>
+                  </ng-container>
+                </div>
+              </ng-container>
+            </div>
+          </ng-container>
+        </div>
+        <div class="input-textarea w-50-spaced mt-1">
+          <label>Carrier</label>
+          <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/Carrier.jsonld']; let i = index">
+            <ng-container *ngIf="item['https://schema.org/name']">
+              <ng-container *ngFor="let name of item['https://schema.org/name']">
+                <ng-container *ngIf="name['@value']">
+                  <p>
+                    {{name['@value']}}
+                  </p>
+                </ng-container>
+              </ng-container>
+              <div class="mt-3">
+                <label>Address</label>
+                <ng-container *ngFor="let address of item['https://schema.org/address']">
+                  <ng-container *ngFor="let addressCountry of address['https://schema.org/addressCountry']">
+                    <p>
+                      {{addressCountry['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressLocality of address['https://schema.org/addressLocality']">
+                    <p>
+                      {{addressLocality['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let addressRegion of address['https://schema.org/addressRegion']">
+                    <p>
+                      {{addressRegion['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let postalCode of address['https://schema.org/postalCode']">
+                    <p>
+                      {{postalCode['@value']}}
+                    </p>
+                  </ng-container>
+                  <ng-container *ngFor="let streetAddress of address['https://schema.org/streetAddress']">
+                    <p>
+                      {{streetAddress['@value']}}
+                    </p>
+                  </ng-container>
+                </ng-container>
+              </div>
+              <div class="mt-3" *ngIf="item['https://shipping-wf.github.io/partyReference']">
+                <label>Party Reference</label>
+                <ng-container *ngFor="let partyRef of item['https://shipping-wf.github.io/partyReference']">
+                  <p>
+                    {{partyRef['@value']}}
+                  </p>
+                </ng-container>
+              </div>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="input-textarea w-50-spaced mt-1">
+          <label>Carrier code</label>
+          <ng-container *ngFor="let carrier of jsonLdDocument['https://shipping-wf.github.io/Carrier.jsonld']; let i = index">
+            <ng-container *ngFor="let identifier of carrier['https://schema.org/identifier']">
+              <p>
+                {{identifier['@value']}}
+              </p>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="input-textarea w-50-spaced mt-1">
+          <label>Type Of Movement</label>
+          <ng-container *ngFor="let item of jsonLdDocument['https://schema.org/serviceType']; let i = index">
+            <ng-container *ngIf="i === 0 && item['@value']">
+              <p>
+                {{item['@value']}}
+              </p>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="shipper my-5">
+      <div class="form-subtitle">Commodity/Cargo Information</div>
+      <div class="data-block ">
+        <div class="cargo-information">
+          <ng-container *ngIf="jsonLdDocument['https://shipping-wf.github.io/ConsignmentItem.jsonld']">
+            <ng-container *ngFor="let consignmentItems of jsonLdDocument['https://shipping-wf.github.io/ConsignmentItem.jsonld']; let i = index">
+              <cargo-list [consignmentItem]="consignmentItems" class="cargoListComponent w-100">
+              </cargo-list>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="charges-information my-5" *ngIf="jsonLdDocument['https://shipping-wf.github.io/Charge.jsonld'];">
+      <div class="form-subtitle">Charges</div>
+      <ng-container *ngFor="let charges of jsonLdDocument['https://shipping-wf.github.io/Charge.jsonld'];">
+        <charges [chargeItem]="charges"></charges>
+      </ng-container>
+    </div>
+    <div class="my-5">
+      <div class="form-subtitle">Additional Information</div>
+      <div class="data-list">
+        <div class="w-100 d-flex justify-content-start">
+          <div class="general-block w-25-spaced">
+            <label>Shipped On Board Date</label>
+            <ng-container *ngFor="let item of jsonLdDocument['https://schema.org/departureTime']; let i = index">
+              <ng-container *ngIf="i === 0 && item['@value']">
+                <p>
+                  {{item['@value'] | date}}
+                </p>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="general-block w-25-spaced">
+            <label>Number of Containers</label>
+            <ng-container *ngFor="let item of jsonLdDocument['https://schema.org/Quantity']; let i = index">
+              <ng-container *ngIf="i === 0 && item['@value']">
+                <p>
+                  {{item['@value']}}
+                </p>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="general-block w-25-spaced">
+            <label>Bill of Lading Type</label>
+            <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/isElectronic']; let i = index;">
+              <p *ngIf="item['@value'] === true; else paperBill">
+                E-bill
+              </p>
+              <ng-template #paperBill>
+                Paper
+              </ng-template>
+            </ng-container>
+            <ng-container *ngFor="let item of jsonLdDocument['https://shipping-wf.github.io/Negotiable']; let i = index;">
+              <p *ngIf="item['@value'] === true; nonNegotiable">
+                Negotiable
+              </p>
+              <ng-template #nonNegotiable>
+                Non-negotiable
+              </ng-template>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

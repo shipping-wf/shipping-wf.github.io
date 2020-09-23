@@ -1,0 +1,28 @@
+.freight-charges-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   min-width: 100%;
+   padding: 15px 0;
+   border-radius: 5px;
+   .gtd-general-block {
+     margin-bottom: 5px;
+     min-height: 66px;
+     margin-right: 13px;
+     p {
+       padding: 0;
+     }
+   }
+ }
+ 
+ .background-gray {
+   background-color: #F6F6F6;
+ }
+ 
+ .background-white {
+   background-color: #ffffff;
+ }
+ 
+ .w-25-spaced {
+   width: calc(25% - 10px);
+ }

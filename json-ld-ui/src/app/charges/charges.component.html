@@ -1,0 +1,72 @@
+<div class="data-list">
+  <div class="general-block w-25-spaced">
+    <label>Charge Code</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/identifier'];" class="mb-5">
+      <ng-container *ngFor="let identifier of chargeItem['https://schema.org/identifier']; let i = index;">
+        <ng-container *ngIf="identifier['@value']">
+          <p>{{identifier['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced">
+    <label>Rate</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/shippingRate'];" class="mb-5">
+      <ng-container *ngFor="let shippingRate of chargeItem['https://schema.org/shippingRate']; let i = index;">
+        <ng-container *ngIf="shippingRate['@value']">
+          <p>{{shippingRate['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced">
+    <label>Currency</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/currency'];" class="mb-5">
+      <ng-container *ngFor="let currency of chargeItem['https://schema.org/currency']; let i = index;">
+        <ng-container *ngIf="currency['@value']">
+          <p>{{currency['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced mr-0">
+    <label>Prepaid / Collect</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/PaymentMethod'];" class="mb-5">
+      <ng-container *ngFor="let paymentTerm of chargeItem['https://schema.org/PaymentMethod']; let i = index;">
+        <ng-container *ngIf="paymentTerm['@value']">
+          <p>{{paymentTerm['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced">
+    <label>Invoice Party</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/leiCode'];" class="mb-5">
+      <ng-container *ngFor="let leiCode of chargeItem['https://schema.org/leiCode']; let i = index;">
+        <ng-container *ngIf="leiCode['@value']">
+          <p>{{leiCode['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced">
+    <label>Payable At</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/Place'];" class="mb-5">
+      <ng-container *ngFor="let place of chargeItem['https://schema.org/Place']; let i = index;">
+        <ng-container *ngIf="place['@value']">
+          <p>{{place['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div class="general-block w-25-spaced">
+    <label>Amount</label>
+    <ng-container *ngIf="chargeItem['https://schema.org/value'];" class="mb-5">
+      <ng-container *ngFor="let value of chargeItem['https://schema.org/value']; let i = index;">
+        <ng-container *ngIf="value['@value']">
+          <p>{{value['@value']}}</p>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

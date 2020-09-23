@@ -1,0 +1,16 @@
+<div class="w-100 d-flex flex-wrap justify-content-between">
+  <div class="goodsDescrpitonBlock w-100">
+    <div class="general-block mr-0">
+      <label>Description of Goods</label>
+      <div class="cargoInfoList">
+        <ng-container *ngIf="consignmentItem && consignmentItem['https://schema.org/description']">
+          <ng-container *ngFor="let item of consignmentItem['https://schema.org/description']">
+            <ng-container *ngFor="let sentence of lineBreakEnabledData(item['@value'])">
+              <p>{{sentence}}</p>
+            </ng-container>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

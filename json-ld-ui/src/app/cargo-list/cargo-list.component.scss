@@ -1,0 +1,92 @@
+.cargo-information-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .gtd-general-block {
+    margin-bottom: 5px;
+    min-height: 66px;
+    p {
+      padding: 0;
+    }
+  }
+}
+
+.background-gray {
+  background-color: #fefefe;
+}
+
+.background-white {
+  background-color: #FFF;
+}
+ 
+textarea.input-textarea {
+  background: transparent;
+  border: none !important;
+  font-size: 0.875rem;
+  width: 100%;
+  resize: none;
+  padding: 0;
+  &:active, &:focus {
+    outline: none !important;
+  }
+}
+
+.block-sub-title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.secondaryInforMationBlock {
+  background-color: #444444;
+  padding: 15px;
+  border-radius: 4px;
+  .gtd-general-block {
+    min-height: 66px;
+    p {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.sibol-data-block {
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.w-50-spaced {
+  width: calc(50% - 10px);
+}
+
+.w-25-spaced {
+  width: calc(25% - 10px);
+}
+
+.w-16-spaced {
+  width: calc((100%/6) - 10px);
+}
+
+.w-33-spaced {
+  width: calc(33.33% - 10px);
+}
+
+.extraMarginBottom {
+  margin-bottom: 5px;
+}
+
+.goodsDescrpitonBlock {
+  .gtd-general-block {
+    height: 100%;
+  }
+  .cargoInfoList {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.goodsDescrpitonBlock {
+  padding: 15px 0;
+}
