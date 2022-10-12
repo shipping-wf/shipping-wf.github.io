@@ -25,7 +25,7 @@
     "@ngx-lite/json-ld": "^0.6.2",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
-    "jsonld": "^3.1.1",
+    "jsonld": "^8.1.0",
     "lodash": "^4.17.20",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
